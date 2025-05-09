@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+    <style>
+        .fieldset{
+            border-radius: 20px;
+            background-color: grey;
+            opacity: 50%;
+            align-items: center;
+            justify-content: center;
+
+        }
+        h1{
+            text-align: center;
+            color: cadetblue;
+            text-decoration: none;
+        }
+        input{
+            color:rgb(97, 97, 98);
+            margin-left: 50%;
+        }
+ body{
+margin: 0%;
+padding: 0%;
+font-family: sans-serif;
+background-color: darkslategrey;
+height: 100vh;
+overflow: hidden;
+background: url(s0.jpeg);
+background-size: cover;
+}
+.center{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+width: 400px;
+border-radius: 10px;
+box-shadow: 8px 8px 5px rgb(27, 27, 26);
+}
+.center h1{
+text-align: center;
+margin: 0;
+text-transform: uppercase;
+font-weight: 500;
+color: rgb(255, 147, 47);
+
+}
+.center hr{
+width: 120px;
+padding: 0;
+color: chartreuse;
+}
+.center form{
+padding: 0 40px;
+box-sizing: border-box;
+box-shadow: rgb(20, 20, 20);
+}
+form .txt-field{
+position: relative;
+border-bottom: 2px solid rgb(15, 15, 14);
+margin: 35px 0;
+}
+.txt-field input{
+width: 100%;
+padding: 0 5px;
+height: 40px;
+font-size: 16px;
+color: silver;
+border: none;
+background: none;
+outline: none;
+}
+.txt-field label{
+position: absolute;
+top: 50%;
+left: 40%;
+color: greenyellow;
+transform: translate(-50%);
+font-size: 16px;
+pointer-events: none;
+}
+.txt-field span::before{
+content: '';
+position: absolute;
+top: 40px;
+left: 0;
+width: 0;
+height: 2px;
+background:#adadad
+transition .5s;
+}
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+    top: -15px;
+    color: #adadad;
+}
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+margin: -5px 0 20px 5px;
+color: rgb(0, 255, 255);
+cursor: pointer;
+}
+.pass:hover{
+text-decoration: underline;
+}
+input[type="submit"]{
+width: 100%;
+height: 50px;
+border: 1px solid greenyellow;
+background: transparent;
+border-radius: 25px;
+font-size: 18px;
+color: #2896db;
+font-weight: 700;
+cursor: pointer;
+outline: none;
+}
+input[type="submit"]:hover{
+background-color: greenyellow;
+transition:.5s;
+}
+input[type="submit"]:active{
+    background-color: orange;
+
+}
+.signup-linl{
+    margin: 30PX 0;
+    text-align: center;
+    font-size: 16px;
+    color:chartreuse;
+}
+.signup-linl a{
+color: orange;
+text-decoration: none;
+}
+.signup-linl a:hover{
+    text-decoration: underline;
+}
+a{box-shadow: #ff2c1f;
+}
+    </style>
+</head>
+<body>
+    <div class="regist">
+        <fieldset>
+            <h1>Student registration form </h1>
+            <input type="text" placeholder="firstname"><br>
+            <input type="text" placeholder="secondname"><br>
+            <input type="text" placeholder="father's name"><br>
+            <input type="text" placeholder="mother's name"><br>
+            <input type="date" placeholder="birthdate"><br>
+            <input type="text" placeholder="birthplace"><br>
+            <input type="text" placeholder="homeplace"><br>
+            <input type="text" placeholder="school you are from"><br>
+            <input type="text" placeholder="school district"><br>
+            <input type="file" placeholder="school report" class="upload"><br>
+
+         
+        </fieldset>
+    </div>
+</body>
+</html>
